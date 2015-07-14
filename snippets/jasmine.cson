@@ -1,4 +1,4 @@
-'source.js':
+'.source.js':
     'jasmine describe':
         'prefix': 'jasdesc'
         'body': """
