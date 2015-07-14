@@ -1,11 +1,14 @@
 {
-    "name": "agrc-snippets",
-    "version": "0.0.0",
-    "description": "AGRC Snippets for Atom",
-    "keywords": ["agrc", "snippets"],
-    "license": "MIT",
-    "repository": "https://github.com/agrc/atom-agrc-snippets",
-    "engines": {
-        "atom": ">=1.0.0 <2.0.0"
-    }
+  "name": "agrc-snippets",
+  "version": "0.0.1",
+  "description": "AGRC Snippets for Atom",
+  "keywords": [
+    "agrc",
+    "snippets"
+  ],
+  "license": "MIT",
+  "repository": "https://github.com/agrc/atom-agrc-snippets",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
 }
