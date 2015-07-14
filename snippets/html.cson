@@ -1,0 +1,5 @@
+'.text.html':
+    # this is not great yet...
+    'dojo attach point':
+        'prefix': 'dpoint'
+        'body': "[data-dojo-attach-point='${1:name}']"

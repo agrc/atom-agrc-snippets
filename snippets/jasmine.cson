@@ -1,0 +1,31 @@
+'source.js':
+    'jasmine describe':
+        'prefix': 'jasdesc'
+        'body': """
+            describe('${1:name}', function () {
+                it('${2:testname}', function () {
+                    ${3:testbody}
+                });
+            });
+        """
+    'jasmine it':
+        'prefix': 'jasit'
+        'body': """
+            it('${1:testname}', function () {
+                ${2:testcode}
+            });
+        """
+    'jasmine beforeEach':
+        'prefix': 'jasbefore'
+        'body': """
+            beforeEach(function () {
+                ${1:testcode}
+            });
+        """
+    'jasmine afterEach':
+        'prefix': 'jasafter'
+        'body': """
+            afterEach(function () {
+                ${1:testcode}
+            });
+        """

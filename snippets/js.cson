@@ -1,0 +1,6 @@
+'source.js':
+    'function log':
+        'prefix': 'conlog'
+        'body': """
+        	console.log('${1:module.id}:${2:function name}', arguments);
+        """
