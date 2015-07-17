@@ -20,6 +20,6 @@
         'prefix': 'objprop'
         'body': """
             // ${1:name}: ${2:Type}
-            //      ${4:summary}
-            ${1:name}: ${3:value}
+            //      ${3:summary}
+            ${1:name}: ${4:value},
         """
