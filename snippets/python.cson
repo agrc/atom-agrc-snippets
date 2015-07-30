@@ -1,0 +1,13 @@
+'.source.python':
+  'debug with nose':
+    'prefix': 'ndebug'
+    'body': """
+     from nose.tools import set_trace
+     set_trace()
+    """
+  'debug with pdb':
+    'prefix': 'debug'
+    'body': """
+     import pdb
+     pdb.set_trace()
+    """
