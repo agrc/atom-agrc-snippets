@@ -14,12 +14,12 @@
             	console.log('${5:module.id}:${1:function name}', arguments);
 
             	${6}
-            }
+            }${7}
         """
     'object property':
         'prefix': 'objprop'
         'body': """
             // ${1:name}: ${2:Type}
             //      ${3:summary}
-            ${1:name}: ${4:value},
+            ${1:name}: ${4:value},${5}
         """
