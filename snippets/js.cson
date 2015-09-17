@@ -13,8 +13,8 @@
                 // ${4:param or return}
                 console.log('${5:module.id}:${1:function name}', arguments);
 
-                ${6}
-            }${7}
+                ${7}
+            }${6}
         """
     'object property':
         'prefix': 'objprop'
