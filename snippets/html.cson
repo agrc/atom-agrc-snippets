@@ -3,3 +3,6 @@
     'dojo attach point':
         'prefix': 'dpoint'
         'body': "[data-dojo-attach-point='${1:name}']"
+    'link to github issue from changelog':
+        'prefix': 'il'
+        'body': "(<a href='https://github.com/agrc/${1:project-name}/issues/${2:num}'>#${2:num}</a>)."

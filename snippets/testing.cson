@@ -29,3 +29,13 @@
                 ${1:testcode}
             });
         """
+    'StubModule':
+        'prefix': 'stubmodule'
+        'body': """
+            stubmodule('${1:module-to-be-stubbed}', {
+                ${2:stubs}
+            }).then(function (StubbedModule) {
+                var testWidget2 = new StubbedModule({}, domConstruct.create('div', {}, document.body));
+                ${3}
+            });
+        """

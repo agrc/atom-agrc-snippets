@@ -23,3 +23,9 @@
             //      ${3:summary}
             ${1:name}: ${4:value},${5}
         """
+    'log the value of a variable':
+        'prefix': 'logvalue'
+        'body': """
+        console.log('${1:variable}', ${1:variable});
+        ${2}
+        """
