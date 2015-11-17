@@ -3,6 +3,9 @@
     'dojo attach point':
         'prefix': 'dpoint'
         'body': "[data-dojo-attach-point='${1:name}']"
+    'dojo attach event':
+        'prefix': 'devent'
+        'body': "data-dojo-attach-event='${1:event}:${2:method},$3'"
     'link to github issue from changelog':
         'prefix': 'il'
         'body': "(<a href='https://github.com/agrc/${1:project-name}/issues/${2:num}'>#${2:num}</a>)."
