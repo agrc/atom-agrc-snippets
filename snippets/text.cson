@@ -1,0 +1,17 @@
+  '.text.plain':
+    'create new file header':
+      'prefix': 'header'
+      'body': """#!/usr/bin/env python
+              # * coding: utf8 *
+              '''
+              ${1:module}.py
+
+              ${2:A module that contains}
+              '''
+
+              ${3:import }
+
+
+              ${4}
+
+              """
