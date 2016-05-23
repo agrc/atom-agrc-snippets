@@ -27,3 +27,6 @@
             ${4}
 
             """
+  'super init call':
+    'prefix': 'superinit'
+    'body': 'super(${1:ClassName}, self).__init__()${2}'
