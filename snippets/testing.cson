@@ -2,8 +2,8 @@
     'jasmine describe':
         'prefix': 'jasdesc'
         'body': """
-            describe('${1:name}', function () {
-                it('${2:testname}', function () {
+            describe('${1:name}', () => {
+                it('${2:testname}', () => {
                     ${3:testbody}
                 });
             });
@@ -11,21 +11,21 @@
     'jasmine it':
         'prefix': 'jasit'
         'body': """
-            it('${1:testname}', function () {
+            it('${1:testname}', () => {
                 ${2:testcode}
             });
         """
     'jasmine beforeEach':
         'prefix': 'jasbefore'
         'body': """
-            beforeEach(function () {
+            beforeEach(() => {
                 ${1:testcode}
             });
         """
     'jasmine afterEach':
         'prefix': 'jasafter'
         'body': """
-            afterEach(function () {
+            afterEach(() => {
                 ${1:testcode}
             });
         """
@@ -34,7 +34,7 @@
         'body': """
             stubmodule('${1:module-to-be-stubbed}', {
                 ${2:stubs}
-            }).then(function (StubbedModule) {
+            }).then(StubbedModule => {
                 var testWidget2 = new StubbedModule({}, domConstruct.create('div', {}, document.body));
                 ${3}
             });
