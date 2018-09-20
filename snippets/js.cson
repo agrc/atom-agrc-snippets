@@ -7,20 +7,20 @@
     'object method':
         'prefix': 'objfunc'
         'body': """
+            /** ${3:description}. 
+             * @param {${5:param_type}} - ${2:param_name} - ${6:param_description}
+             * @returns {${7:return_type}} - ${8:return_description}
+             */
             ${1:function name}: function (${2}) {
-                // summary:
-                //      ${3:description}
-                // ${4:param or return}
-                console.log('${5:module.id}:${1:function name}', arguments);
+                console.log('${4:module.id}:${1:function name}', arguments);
 
-                ${7}
-            }${6}
+                ${10}
+            }${9}
         """
     'object property':
         'prefix': 'objprop'
         'body': """
-            // ${1:name}: ${2:Type}
-            //      ${3:summary}
+            /** @property {${2:type}} - ${3:description}. */
             ${1:name}: ${4:value},${5}
         """
     'log the value of a variable':
